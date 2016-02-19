@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Hash</string>
+
+    <!-- MAIN ACTIVITY -->
+    <string name="button_text_submit_url">Get hash info</string>
+    <string name="input_url_hint">Enter URL:</string>
+    <string name="text_view_url">Website URL:</string>
+    <string name="text_view_hash">Website SHA1:</string>
+    <string name="text_view_location">Hash location:</string>
+</resources>
