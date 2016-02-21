@@ -105,11 +105,14 @@ public class WebsiteReader extends AsyncTask<Void, Void, Void> {
         try {
             //try with res min API lvl 19 ;(
             BufferedReader breader = new BufferedReader(new InputStreamReader(inputStream));
-            String dataLine;
-            while ((dataLine = breader.readLine()) != null) {
-                siteContentBuilder.append(dataLine);
+            try {
+                String dataLine;
+                while ((dataLine = breader.readLine()) != null) {
+                    siteContentBuilder.append(dataLine);
+                }
+            } finally {
+                breader.close();
             }
-            breader.close();
         } catch (IOException ioEx) {
             Timber.e("Buffer reading fail caused by %s", ioEx.toString());
         }

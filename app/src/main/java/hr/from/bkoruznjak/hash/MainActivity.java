@@ -125,6 +125,8 @@ public class MainActivity extends AppCompatActivity {
                     } else {
                         new WebsiteReader(getApplicationContext(), inputURL.getText().toString()).execute();
                     }
+                } else if (StringUtils.isBlank(inputURL.getText())) {
+                    new Toasty(getApplicationContext(), "URL field empty", 10, Typeface.DEFAULT).show();
                 } else {
                     new Toasty(getApplicationContext(), "Input URL is invalid", 10, Typeface.DEFAULT).show();
                 }

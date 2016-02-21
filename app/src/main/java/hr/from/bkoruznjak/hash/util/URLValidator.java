@@ -16,7 +16,7 @@ public class URLValidator {
      * @param urlString
      */
     public static boolean isValidURL(String urlString) {
-        Timber.i("got url:", urlString);
+        Timber.i("got url: %s", urlString);
         //sad sad workaround
         if (urlString.startsWith("www")
                 || (urlString.startsWith("WWW"))) {
