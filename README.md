@@ -1,7 +1,7 @@
 # HashApp
 Test website hash buiilder
 
-App for website that takes user input and validates if a website url is valid.
+App that takes website URL adresses as user input and validates if a website url is valid.
 
 After the validation success the user may read the website contents and generate a SHA1 hash of the website.
 
